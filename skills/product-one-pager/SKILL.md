@@ -6,6 +6,7 @@ If the user hasn't already specified the feature or problem area, ask them:
 What feature/problem area is this one-pager about?
 Is there a specific angle or framing they want to lead with?
 Is there a Notion parent page or section it should live under?
+Are there any screenrecordings or videos of real customers using the product that you can share?
 
 Keep this brief — one or two questions max. If the user has already given you a clear topic, skip ahead to research.
 Step 2: Research in parallel
@@ -44,7 +45,7 @@ Frequency signals (how often this comes up)
 
 Use search_articles to see if support docs exist, which can reveal scope boundaries.
 PostHog (if connected)
-If you have PostHog access, search for usage data or feature flag information related to the topic. If PostHog is not connected, note this gap — the user may want to add usage data manually.
+If you have PostHog access, search for usage data or feature flag information related to the topic. If PostHog is not connected, note this gap — the user may want to add usage data manually. If it's possible to get screen recordings of customers using the product, analyze those for real-world pain points and behaviours to include as evidence. Map out the real world user journey map based on the recordings, and note any friction points or moments of delight that could inform the one-pager.
 Step 3: Synthesise your findings
 Before writing, mentally organise what you found:
 
@@ -119,6 +120,7 @@ A brief summary of the key sources you drew from
 An honest note about any sections that need human input (thin evidence, missing PostHog data, no technical spec yet, etc.)
 
 Don't over-explain. The user can see the doc — point them to it and flag what needs their attention.
+Don't use common LLM phrases or em dashes. Write in a clear, concise style that gets to the point without filler.
 Important principles
 Ground everything in evidence. Don't invent problems or evidence. If a section is thin, leave a clear placeholder rather than fabricating plausible-sounding content.
 Use the customer's language. When quoting customers from Intercom or Slack, use their actual words — this is more compelling than paraphrased summaries.
