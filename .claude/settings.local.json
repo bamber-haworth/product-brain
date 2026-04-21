@@ -3,7 +3,16 @@
     "allow": [
       "Skill(schedule)",
       "Skill(update-config)",
-      "Bash(claude mcp *)"
+      "Bash(claude mcp *)",
+      "Bash(git rm *)",
+      "Bash(echo \"scripts/gmail-credentials.sh\")",
+      "Bash(git add *)",
+      "Bash(git commit *)",
+      "Bash(git checkout *)",
+      "Bash(git merge *)",
+      "Bash(git push *)",
+      "Bash(git stash *)",
+      "Bash(git pull *)"
     ]
   }
 }
