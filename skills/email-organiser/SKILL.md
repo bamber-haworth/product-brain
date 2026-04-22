@@ -30,3 +30,5 @@ Step 9: Identify quite old emails (more than 7 days old) which have not been ope
 Ensure that there are appropriate folders to organise the user's mail. Organise them by category (e.g. "2FA and Login Emails", "Colleagues", "Customers", "Task Alerts", "Calendar Alerts", "Newsletters and Subscriptions", "Other Emails"). Move the identified emails into their respective folders to help the user manage their inbox more efficiently. Additionally, set up filters or rules in the user's email client to automatically categorise incoming emails based on the criteria outlined in the steps above, to maintain an organised inbox going forward. Colleague emails and customer emails should be prioritised in the user's inbox and kept visible, while other categories can be organised into folders for easy access. Regularly review and update the email organisation system to ensure it continues to meet the user's needs and preferences.
 
 Read the contents of the customer emails, and if it seems like a feature request, create a draft email to send it to harvestr. Ask the user what their team's harvestr email is.
+
+Schedule this process to run every day at 8.30am.
