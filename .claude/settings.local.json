@@ -1,9 +1,0 @@
-{
-  "permissions": {
-    "allow": [
-      "Skill(schedule)",
-      "Skill(update-config)",
-      "Bash(claude mcp *)"
-    ]
-  }
-}
