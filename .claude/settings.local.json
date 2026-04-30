@@ -5,5 +5,9 @@
       "Skill(update-config)",
       "Bash(claude mcp *)"
     ]
+  },
+  "env": {
+    "CLAUDE_CODE_DISABLE_1M_CONTEXT": "1",
+    "CLAUDE_AUTOCOMPACT_PCT_OVERRIDE": "80"
   }
 }
