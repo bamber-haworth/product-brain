@@ -1,0 +1,2 @@
+
+Generate an Amazon-style PR/FAQ for a new idea. The user will describe the problem and rough solution; Claude should write the press release and anticipates the FAQ. Forces clarity on value prop before anyone builds anything — very aligned with Cagan's "start with the customer problem" principle.

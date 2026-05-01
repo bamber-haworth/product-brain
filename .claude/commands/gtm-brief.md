@@ -1,0 +1,1 @@
+Takes a product or feature description and drafts a concise GTM brief: ICP, positioning, channel recommendation, and launch motion. Good for pressure-testing your thinking or getting a first draft before a stakeholder meeting.
