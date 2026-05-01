@@ -1,40 +1,42 @@
 {
   "$schema": "https://json-schema.org/claude-code-settings.json",
-    "model": "claude-sonnet-4-6",
- "spinnerTipsEnabled": false,      // No loading tips — keep it clean
-  "autoUpdates": true,              // Always on latest version
+
+  "model": "claude-sonnet-4-6",
+
+  "spinnerTipsEnabled": false,
+  "autoUpdates": true,
 
   "permissions": {
     "allow": [
-      "Read(**)",                   // Read any file — needed for research and context
-      "Write(**.md)",               // Write markdown — your primary output format
+      "Read(**)",
+      "Write(**.md)",
       "Write(**.txt)",
       "Write(**.json)",
-      "Bash(open *)",               // Open files/URLs in your default app
+      "Bash(open *)",
       "Bash(echo *)",
       "Bash(cat *)",
       "Bash(ls *)",
-      "Bash(grep *)",               // Search within files
+      "Bash(grep *)",
       "Bash(find *)",
-      "Bash(pbcopy)",               // Copy to clipboard (macOS)
+      "Bash(pbcopy)",
       "Bash(pbpaste)"
     ],
     "deny": [
-      "Bash(rm *)",                 // No deletions without explicit approval
-      "Bash(sudo *)",               // No elevated privileges
-      "Bash(curl * | bash *)",      // No piped installs
-      "Bash(npm install *)",        // Don't install packages without asking
+      "Bash(rm *)",
+      "Bash(sudo *)",
+      "Bash(curl * | bash *)",
+      "Bash(npm install *)",
       "Bash(pip install *)",
-      "Read(.env*)"                 // Never read credentials or secrets
+      "Read(.env*)"
     ]
   },
 
- "attribution": {
-    "commits": false,               // Don't add Co-Authored-By to commits
+  "attribution": {
+    "commits": false,
     "prs": false
   },
 
-"env": {
+  "env": {
     "CLAUDE_ROLE": "senior-pm",
     "CLAUDE_FOCUS": "strategy,gtm,adoption"
   }
