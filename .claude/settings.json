@@ -1,0 +1,43 @@
+{
+  "$schema": "https://json-schema.org/claude-code-settings.json",
+
+  "model": "claude-sonnet-4-6",
+
+  "spinnerTipsEnabled": false,
+  "autoUpdates": true,
+
+  "permissions": {
+    "allow": [
+      "Read(**)",
+      "Write(**.md)",
+      "Write(**.txt)",
+      "Write(**.json)",
+      "Bash(open *)",
+      "Bash(echo *)",
+      "Bash(cat *)",
+      "Bash(ls *)",
+      "Bash(grep *)",
+      "Bash(find *)",
+      "Bash(pbcopy)",
+      "Bash(pbpaste)"
+    ],
+    "deny": [
+      "Bash(rm *)",
+      "Bash(sudo *)",
+      "Bash(curl * | bash *)",
+      "Bash(npm install *)",
+      "Bash(pip install *)",
+      "Read(.env*)"
+    ]
+  },
+
+  "attribution": {
+    "commits": false,
+    "prs": false
+  },
+
+  "env": {
+    "CLAUDE_ROLE": "senior-pm",
+    "CLAUDE_FOCUS": "strategy,gtm,adoption"
+  }
+}
