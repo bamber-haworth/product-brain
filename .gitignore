@@ -1,6 +1,8 @@
 scripts/gmail-credentials.sh
 # Added by code-review-graph
 .code-review-graph/
+.product-context/
 product-context/
 settings.local.json
+outputs/
 
