@@ -5,18 +5,16 @@ description: This skill generates a weekly update summarising the work that has 
 
 ## How to Generate the Weekly Update
 
-This skill generates a weekly update summarising the work that has happened over the last week. This is a weekly task that should be completed every Wednesday morning (9am London time), and should take no more than 30 minutes to complete. The updates should be generated from:
+This skill generates a weekly update summarising the work that has happened over the last week. This is a weekly task that should be completed every Wednesday morning (9am London time), and should take no more than 30 minutes to complete. Read `product-context/COMPANY.md` for the full list of data sources (GitHub repositories, Slack channels, Notion URLs). Each entry has a comment explaining what content it contains. The updates should be generated from:
 
-- Any commits related to new tags in the front-end apps repository on Github (see `product-context/COMPANY.md` for the repo name): these are shipped front-end bugs and features
-- Any commits related to new tags in the Pro Editor repository on Github (see `product-context/COMPANY.md` for the repo name): these are shipped front-end bugs and features for the advanced editing experience
-- Any posts in the shipped channel in Slack (see `product-context/COMPANY.md` for the channel name): these are shipped features and updates across the company
-- Any deals posted by Hubspot in the customer success ops channel in Slack (see `product-context/COMPANY.md` for the channel name): these are new customers that have signed up
-- Any items where the status has changed in the Notion Product Status database (see `product-context/COMPANY.md` for the URL) — particularly the Launch status and the Project status. You can get more details about each project from the one pager in the database inside that specific item's page. These items also contain metadata that tells you the product it relates to, which team owns the project, and other useful information to help you understand the context of the update.
-  - Do not include items that are not yet planned, so don't have a Quarter assigned (Q2, Q3 etc) as these are still with the product team and don't need to be discussed more widely yet.
+- **GitHub**: for each repository listed in `product-context/COMPANY.md`, check for new tags in the last 7 days. The comment next to each repo explains what shipped content those tags represent.
+- **Slack**: for each channel listed in `product-context/COMPANY.md`, check for relevant posts. The comment explains what is posted there.
+- **Notion**: check the Product Status database (URL in `product-context/COMPANY.md`) for items where the Launch status or Project status has changed. Fetch the one pager inside each item's page for fuller context on the project, team, and product area.
+  - Do not include items that are not yet planned — i.e. those without a Quarter assigned (Q2, Q3 etc), as these are still in product discovery and not ready for wider visibility.
 
 The timeframe of data to cover is the last 7 days.
 
-Summarise the updates in a concise way and store it in the Weekly Updates Notion page (see `product-context/COMPANY.md` for the URL). You can see previous weekly updates there — simply add a new one to the list. The updates should be grouped by team (see `product-context/PRODUCTS.md` for team names) and what has been done/shipped, what is in discovery/what is coming up, and how things that are in progress are going (including items in design and in progress). The updates should be written in a way that is easy to understand for someone who is not familiar with the technical details of the work, but still provides enough information to give a clear picture of what has been happening across the company.
+Summarise the updates in a concise way and store it in the Weekly Updates Notion page (URL in `product-context/COMPANY.md`). You can see previous weekly updates there — simply add a new one to the list. The updates should be grouped by team (see `product-context/PRODUCTS.md` for team names) and what has been done/shipped, what is in discovery/what is coming up, and how things that are in progress are going (including items in design and in progress). The updates should be written in a way that is easy to understand for someone who is not familiar with the technical details of the work, but still provides enough information to give a clear picture of what has been happening across the company.
 
 List all the sources referenced so it is clear where the data comes from, and link to the relevant pages or posts where possible.
 
