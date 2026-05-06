@@ -38,6 +38,8 @@
 
   "env": {
     "CLAUDE_ROLE": "senior-pm",
-    "CLAUDE_FOCUS": "strategy,gtm,adoption"
+    "CLAUDE_FOCUS": "strategy,gtm,adoption",
+    "CLAUDE_CODE_DISABLE_1M_CONTEXT": "1",
+    "CLAUDE_AUTOCOMPACT_PCT_OVERRIDE": "80"
   }
 }
