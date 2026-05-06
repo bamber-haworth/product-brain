@@ -190,3 +190,22 @@ Fall back to Grep/Glob/Read **only** when the graph doesn't cover what you need.
 3. Use `get_affected_flows` to understand impact.
 4. Use `query_graph` pattern="tests_for" to check coverage.
 
+## Knowledge Layer
+
+There is a folder in product-context called memory. This is the place to reference everything that claude is learning, and to store learnings.
+Before starting a new task, review existing rules and hypotheses for this domain. Apply rules by default. Check if any hypothesis can be tested with today's work.
+
+At the end of each task, extract insights. Store them in domain folders, e.g.: product-context/pricing/ (or product-context/onboarding/, /product-context/competitors/) knowledge.md (facts and patterns) hypotheses.md (need more data) rules.md (confirmed — apply by default)
+
+Maintain a /knowledge/INDEX.md that routes to each domain folder. Create the structure if it doesn't exist yet. When a hypothesis gets confirmed 3+ times, promote it to a rule. When a rule gets contradicted by new data, demote it back to hypothesis.
+
+So, there would be 3 files in the folder - HYPOTHESES.md, KNOWLEDGE.md and RULES.md. 
+Each one contains:
+→ knowledge.md (facts and patterns)
+→ hypotheses.md (observations that need more data)
+→ rules.md (confirmed, apply by default)
+
+Before every task, Claude reads the relevant domain folder.
+After every task, Claude extracts new insights and updates the right files.
+When a hypothesis gets confirmed 3+ times → promote to a rule.
+When a rule gets contradicted by new data → demote back to hypothesis.
