@@ -145,11 +145,6 @@ Parent owns final output and cross-spawn synthesis. User instructions override.
 
 Use 'pdftotext', not the 'Read' tool. Use 'Read' only when the user directly asks to analyze images or charts inside the document. Read loads PDFs as images.
 
-## Dedicated Tools
-
-<!-- List project-specific tools here. For each, link to its skill or script file (e.g. `tools/reddit_fetch.py`). The orchestration logic lives in those files, not here. -->
-
-
 
 <!-- code-review-graph MCP tools -->
 ## MCP Tools: code-review-graph
@@ -209,3 +204,5 @@ Before every task, Claude reads the relevant domain folder.
 After every task, Claude extracts new insights and updates the right files.
 When a hypothesis gets confirmed 3+ times → promote to a rule.
 When a rule gets contradicted by new data → demote back to hypothesis.
+
+Keep all company, brand and product specific data in the product-context folder as this is gitignored. Do not store identifiable information anywhere else in this repo.
