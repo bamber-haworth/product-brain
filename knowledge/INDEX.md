@@ -17,4 +17,12 @@ Copy `template/` when starting a new domain folder.
 
 | Domain | Path | Summary |
 |---|---|---|
-| _(none yet)_ | | Domain folders are created as general, non-proprietary insights emerge from work in this repo. |
+| Discovery | `discovery/` | Continuous Discovery Habits (Torres), Jobs to Be Done, Five Whys |
+| Prioritisation | `prioritisation/` | RICE, MoSCoW, Kano Model |
+| Goal setting | `goal-setting/` | OKRs, North Star Metric |
+| Metrics | `metrics/` | HEART framework, AARRR (Pirate Metrics) |
+| Stakeholder management | `stakeholder-management/` | RACI/DACI, stakeholder power/interest mapping |
+| GTM strategy | `gtm-strategy/` | Segmentation (STP), market sizing (TAM/SAM/SOM) |
+| Vision and roadmapping | `vision-and-roadmapping/` | Product Vision Board, GO Product Roadmap (Pichler) |
+| Mapping techniques | `mapping-techniques/` | Wardley mapping, user story mapping, user journey mapping: structure, use cases, common mistakes, and how the three relate |
+| Product improvement | `product-improvement/` | Five-step methodology: define positioning, segment by behaviour, journey map, identify friction and improvement vectors, prioritise with a framework |
