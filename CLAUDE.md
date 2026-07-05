@@ -187,22 +187,17 @@ Fall back to Grep/Glob/Read **only** when the graph doesn't cover what you need.
 
 ## Knowledge Layer
 
-There is a folder in product-context called memory. This is the place to reference everything that claude is learning, and to store learnings.
-Before starting a new task, review existing rules and hypotheses for this domain. Apply rules by default. Check if any hypothesis can be tested with today's work.
+There are two parallel knowledge layers. Both use the same structure: a domain folder containing `KNOWLEDGE.md` (facts and patterns), `HYPOTHESES.md` (observations that need more data), and `RULES.md` (confirmed patterns to apply by default). The only difference is where each kind of insight lives.
 
-At the end of each task, extract insights. Store them in domain folders, e.g.: product-context/pricing/ (or product-context/onboarding/, /product-context/competitors/) knowledge.md (facts and patterns) hypotheses.md (need more data) rules.md (confirmed — apply by default)
+**`product-context/memory/`** — gitignored, never committed. Anything company-, brand-, or product-specific: named products, customers, internal metrics, roadmap detail. Indexed at `product-context/memory/INDEX.md`.
 
-Maintain a /knowledge/INDEX.md that routes to each domain folder. Create the structure if it doesn't exist yet. When a hypothesis gets confirmed 3+ times, promote it to a rule. When a rule gets contradicted by new data, demote it back to hypothesis.
+**`knowledge/`** — tracked in git, visible in the repo. General product management learning that holds regardless of employer or product: discovery methods, adoption patterns, positioning frameworks, and the like, stripped of any identifying detail. Indexed at `knowledge/INDEX.md`.
 
-So, there would be 3 files in the folder - HYPOTHESES.md, KNOWLEDGE.md and RULES.md. 
-Each one contains:
-→ knowledge.md (facts and patterns)
-→ hypotheses.md (observations that need more data)
-→ rules.md (confirmed, apply by default)
+When extracting an insight at the end of a task, ask whether it would still be true and useful at a different company. If yes, and it contains no identifying detail, it belongs in `knowledge/`. If it's tied to a specific company, product, or customer, it belongs in `product-context/memory/`. When in doubt, treat it as proprietary and keep it in `product-context/memory/`.
 
-Before every task, Claude reads the relevant domain folder.
-After every task, Claude extracts new insights and updates the right files.
-When a hypothesis gets confirmed 3+ times → promote to a rule.
-When a rule gets contradicted by new data → demote back to hypothesis.
+Workflow for both layers:
+- Before starting a new task, review existing rules and hypotheses for the relevant domain. Apply rules by default. Check if any hypothesis can be tested with today's work.
+- After each task, extract insights and store them in the appropriate domain folder under the appropriate layer, creating the domain folder (copy the `template/` folder in that layer) if it doesn't exist yet.
+- When a hypothesis is confirmed 3+ times, promote it to a rule. When a rule is contradicted by new data, demote it back to a hypothesis.
 
-Keep all company, brand and product specific data in the product-context folder as this is gitignored. Do not store identifiable information anywhere else in this repo.
+Never store company, brand, product, or customer-identifying information anywhere in this repo outside `product-context/`, which is gitignored for exactly this reason.
